@@ -5,13 +5,12 @@
 			<el-input v-model='author'></el-input>
 		  </el-form-item>
 		  <el-form-item label="内容">
-			<el-input type="textarea"  v-model='content'></el-input>
+			<el-input type="textarea" style="width:300px"  v-model='content'></el-input>
 		  </el-form-item>
 		  <el-form-item>
 			<el-button type="primary" @click='doSave'>发布</el-button>
 		  </el-form-item>
 		</el-form>
-		
 	</div>
 </template>
 
@@ -54,3 +53,16 @@ var commentInput = {
 
 export default commentInput;
 </script>
+
+<style>
+	.el-input{
+		width:300px;
+	}
+	#root {
+		width: 400px;
+		padding: 2em;
+		margin: 2em auto;
+		border: 1px solid #e0e0e0;
+		border-radius: 1em;
+	}
+</style>
